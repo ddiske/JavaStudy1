@@ -28,7 +28,7 @@ public class StudyLoop8 {
 					System.out.println("로그인 성공");
 					flag = !flag;
 				}else {
-					System.out.println("다시 시도하세요");
+					System.out.println("로그인 실패");
 				}
 			}else if(select == 2) {
 				System.out.println("프로그램을 종료합니다");
