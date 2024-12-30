@@ -16,7 +16,7 @@ public class ArrayStudy4 {
 			for (int j = i+1; j < nums.length; j++) {
 				System.out.print(j);
 				int temp = nums[i];
-				if(nums[i] < nums[j]) {
+				if(nums[i] > nums[j]) {
 					nums[i] = nums[j];
 					nums[j] = temp;
 					
