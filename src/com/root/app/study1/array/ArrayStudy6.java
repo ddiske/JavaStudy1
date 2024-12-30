@@ -38,7 +38,6 @@ public class ArrayStudy6 {
 			total [i] = kors[i] + math[i];
 		}
 		
-		int [][] scores = {kors, math, total};
 		
 		//------------------------------------------------------------
 		//총점 기준으로 내림차순 정렬
@@ -48,6 +47,20 @@ public class ArrayStudy6 {
 					temp = total[j];
 					total[j] = total[j+1];
 					total[j+1] = temp;
+					
+					temp = kors[j];
+					kors[j] = kors[j+1];
+					kors[j+1] = temp;
+					
+					temp = math[j];
+					math[j] = math[j+1];
+					math[j+1] = temp;
+					
+					String tempname = names[j];
+					names[j] = names[j+1];
+					names[j+1] = tempname;
+					
+					
 				}
 				
 			}
@@ -58,6 +71,7 @@ public class ArrayStudy6 {
 		for(int i = 0; i < nums; i++) {
 			System.out.println(names [i] + "국어점수 : " + kors[i] + " / " + "수학점수 : " + math[i] + " / " + "총점 : " + total[i]);
 		}
+		
 
 	}
 
