@@ -50,5 +50,22 @@ public class SchoolMateFactory {
 		return copy;
 	}
 	
+	public SchoolMate find(SchoolMate [] schoolMates) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("찾으시는 학생의 번호를 입력하세요");
+		int num = sc.nextInt();
+		SchoolMate schoolMate = null;
+		
+		for(int i = 0; i < schoolMates.length; i++) {
+			if(num == schoolMates[i].num) {
+				schoolMate = schoolMates[i];
+				break;
+			}
+		}
+		
+		return schoolMate;
+		
+	}
+	
 
 }

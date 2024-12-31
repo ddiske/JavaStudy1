@@ -17,12 +17,19 @@ public class SchoolController {
 		SchoolMate [] schoolMates = new SchoolMate[0];
 		
 		while(check) {
-			System.out.println("1.입력 2.출력 3.종료");
+			System.out.println("1.입력 2.출력 3.검색 4.종료");
 			int select = sc.nextInt();
 			if(select == 1) {
 				schoolMates = sf.make(schoolMates);
 			}else if(select == 2) {
 				sv.viewAll(schoolMates);
+			}else if(select == 3) {
+				SchoolMate schoolMate = sf.find(schoolMates);
+				if(schoolMate != null) {
+					sv.view(schoolMate);
+				}else {
+					System.out.println("일치하는 학생이 없다");
+				}
 			}else {
 				System.out.println("종료");
 				break;
