@@ -5,6 +5,7 @@ public class ObjectEx {
 	int num1;
 	int num2;
 	
+	
 	public void eq(ObjectEx ex) {
 		//
 		if(this.num1 == ex.num1 && this.num2 == ex.num2) {

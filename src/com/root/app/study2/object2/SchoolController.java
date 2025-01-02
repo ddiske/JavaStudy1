@@ -22,7 +22,7 @@ public class SchoolController {
 			if(select == 1) {
 				schoolMates = sf.make(schoolMates);
 			}else if(select == 2) {
-				sv.viewAll(schoolMates);
+				sv.view(schoolMates);
 			}else if(select == 3) {
 				SchoolMate schoolMate = sf.find(schoolMates);
 				if(schoolMate != null) {

@@ -10,6 +10,15 @@ public class ObjectStudent {
 	int total;
 	double avg;
 	
+	//생성자
+	//메서드명은 클래스명과 동일하게
+	//기본 생성자(Default Cnstructor)
+	//매개변수가 없는 생성자
+	public ObjectStudent() {
+		System.out.println("생성자 호출");
+	}
+	
+	
 	public void info() {
 		System.out.println("info");
 		//참조변수 this
@@ -28,6 +37,8 @@ public class ObjectStudent {
 		System.out.println("sum 메서드 입니다");
 		//재귀함수
 		//this.info();
+		this.total = this.kor + this.eng + this.math;
+		this.avg = this.total / 3.0;
 	}
 
 }

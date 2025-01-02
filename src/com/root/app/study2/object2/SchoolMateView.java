@@ -21,8 +21,8 @@ public class SchoolMateView {
 
 	}
 	
-	//viewAll
-	public void viewAll(SchoolMate [] schoolMates) {
+	//viewAll - method overloading (view)
+	public void view(SchoolMate [] schoolMates) {
 		System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균");
 		
 //		for(int i = 0; i < schoolMates.length; i++) {
