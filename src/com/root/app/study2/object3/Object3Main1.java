@@ -1,5 +1,7 @@
 package com.root.app.study2.object3;
 
+import com.root.app.study2.object4.ModTest;
+
 public class Object3Main1 {
 
 	public static void main(String[] args) {
@@ -14,6 +16,14 @@ public class Object3Main1 {
 		
 		student.info();
 		student2.info();
+		
+		ModTest modTest = new ModTest();
+		modTest.num1 = 1;
+//		modTest.num2 = 2;
+//		ModTest.num3 = 3;
+//		ModTest.num4 = 4;
+		
+		
 
 	}
 
