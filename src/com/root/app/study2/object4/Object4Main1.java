@@ -25,10 +25,9 @@ public class Object4Main1 {
 //		modTest.m4();
 		
 		Member m = new Member();
+		m.setAge(40);
 		
-		m.setMuge(100);
-		
-		System.out.println(m.getMuge());
+		System.out.println(m.getAge());
 
 	}
 
