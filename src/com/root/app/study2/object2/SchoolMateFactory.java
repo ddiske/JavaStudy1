@@ -2,6 +2,8 @@ package com.root.app.study2.object2;
 
 import java.util.Scanner;
 
+import javax.net.ssl.SSLEngine;
+
 public class SchoolMateFactory {
 	
 	//make
@@ -64,6 +66,47 @@ public class SchoolMateFactory {
 		}
 		
 		return schoolMate;
+		
+	}
+	
+	//*삭제*
+	public SchoolMate [] delete(SchoolMate [] schoolMates) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("삭제할 번호 입력");
+		int select = sc.nextInt();
+		int find = -1;
+		for(int i = 0; i < schoolMates.length; i++) {
+			if(select == schoolMates[i].num) {
+				find = i;
+				SchoolMate [] copy = new SchoolMate[schoolMates.length - 1];
+				int idx = 0;
+				for(int j = 0; j < schoolMates.length; j++) {
+					if(i == j) {
+						continue;
+					}
+					copy[idx] = schoolMates[j];
+					idx++;
+				}
+				
+				schoolMates = copy;
+				break;
+			}
+		}
+		
+//		if(find > -1) {
+//			SchoolMate [] copy = new SchoolMate[schoolMates.length - 1];
+//			int idx = 0;
+//			for(int i = 0; i < schoolMates.length; i++) {
+//				if(find == i) {
+//					continue;
+//				}
+//				copy[idx] = schoolMates[i];
+//				idx++;
+//			}
+//			
+//		}
+		
+		return schoolMates;
 		
 	}
 	

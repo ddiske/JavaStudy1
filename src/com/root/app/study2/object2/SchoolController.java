@@ -17,7 +17,7 @@ public class SchoolController {
 		SchoolMate [] schoolMates = new SchoolMate[0];
 		
 		while(check) {
-			System.out.println("1.입력 2.출력 3.검색 4.종료");
+			System.out.println("1.입력 2.출력 3.검색 4.삭제 5.종료");
 			int select = sc.nextInt();
 			if(select == 1) {
 				schoolMates = sf.make(schoolMates);
