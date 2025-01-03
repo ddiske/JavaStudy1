@@ -1,67 +1,30 @@
 package com.root.app.students;
 
-public class MiddleStudent {
+public class MiddleStudent extends Student {
 	
-	private String name;
-	private int num;
-	private int kor;
-	private int eng;
-	private int math;
+	
+	public MiddleStudent() {
+		super("iu");
+		super.setName("winter");
+		System.out.println(super.getName());
+		
+		this.setName("iu");
+		System.out.println(this.getName());
+		System.out.println(super.getName());
+		
+	}
+	
+	
 	private int history;
-	private int sum;
-	private double avg;
 	
 	
-	
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getNum() {
-		return num;
-	}
-	public void setNum(int num) {
-		this.num = num;
-	}
-	public int getKor() {
-		return kor;
-	}
-	public void setKor(int kor) {
-		this.kor = kor;
-	}
-	public int getEng() {
-		return eng;
-	}
-	public void setEng(int eng) {
-		this.eng = eng;
-	}
-	public int getMath() {
-		return math;
-	}
-	public void setMath(int math) {
-		this.math = math;
-	}
 	public int getHistory() {
 		return history;
 	}
 	public void setHistory(int history) {
 		this.history = history;
 	}
-	public int getSum() {
-		return sum;
-	}
-	public void setSum(int sum) {
-		this.sum = sum;
-	}
-	public double getAvg() {
-		return avg;
-	}
-	public void setAvg(double avg) {
-		this.avg = avg;
-	}
+	
 	
 
 }

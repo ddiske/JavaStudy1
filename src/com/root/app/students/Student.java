@@ -10,6 +10,10 @@ public class Student {
 	private int sum;
 	private double avg;
 	
+	public Student(String name) {
+		this.name = name;
+	}
+	
 	
 	
 	public String getName() {
